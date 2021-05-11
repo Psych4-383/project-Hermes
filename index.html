@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Hermes | Cosmic Walk</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="mainContent">
+        <nav>
+            <ul id="navUL">
+                <div id="left">
+                    <a href="/">
+                        <li>Project Hermes</li>
+                    </a>
+                </div>
+                <div id="right">
+                    <a href="#main">
+                        <li>About</li>
+                    </a>
+                    <button onclick="authenticate()" id="applyButton">
+                        <li>Application Form</li>
+                    </button>
+                    <a href="sign-in.html">
+                        <li>Sign In</li>
+                    </a>
+                </div>
+            </ul>
+        </nav>
+        <header>
+            <h1 id="mainHead">project <br> hermes</h1>
+            <hr class="hrHeader">
+        </header>
+        <div class="main" id="main">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat voluptatibus sint sapiente dolorem
+            repellendus iusto quisquam, sed nihil quo. Qui quam architecto rem commodi, excepturi aut pariatur omnis
+            voluptate quaerat magni eaque maxime exercitationem eos voluptas est iure assumenda nobis dignissimos saepe
+            aspernatur deleniti. Sint, animi expedita. Sequi voluptates alias quaerat neque veniam error minima
+            inventore
+            consectetur unde iusto. Nostrum eos quisquam perspiciatis aliquam, architecto eveniet similique, quos
+            cupiditate
+            eius est, consequatur corporis? A id unde sunt iusto ducimus voluptatum earum? Facere ullam temporibus
+            quibusdam! Minima omnis quibusdam quasi cumque itaque voluptatum soluta voluptatem, expedita suscipit in
+            odio
+            exercitationem enim aliquam facilis consectetur laudantium dolores mollitia consequuntur corporis eos!
+            Deleniti
+            quidem unde obcaecati explicabo inventore rem quos natus facere sapiente illo quisquam et ipsa cupiditate,
+            voluptatum consectetur recusandae libero nam vel? Dolorem, earum vero commodi saepe laborum non, optio ipsum
+            amet illo ipsam rem id quae. Dignissimos voluptatum nulla cum magni reiciendis obcaecati est sunt
+            repudiandae
+            aperiam veniam sapiente possimus ab quo, autem ipsa perferendis molestias? Atque maiores quos veritatis
+            perspiciatis velit explicabo error voluptatibus labore aliquam ut! Ipsa harum omnis autem hic? Temporibus
+            assumenda laboriosam quasi molestias maxime deserunt velit recusandae sed, laborum rerum ab sit perspiciatis
+            tenetur dolorum!
+        </div>
+    </div>
+    <div id="popUp">
+        <div class="logindiv">
+            <h1>Login to Apply for Project Hermes</h1>
+            <form action="signin.html" id="authForm">
+                <input type="text" name="username" id="username" placeholder="Enter Username" autocomplete='off'>
+                <input type="password" name="pswd" id="pswd" placeholder="Enter Password" autocomplete="current-password">
+                <input onclick="validate()" class="authButton" placeholder="Login" id="submitButton">
+            </form>
+            <button onclick="goBack()" class="authButton">
+                Go Back
+            </button>
+        </div>
+        
+    </div>
+</body>
+
+</html>
+

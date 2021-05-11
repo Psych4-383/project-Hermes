@@ -1,0 +1,130 @@
+* {
+    scroll-behavior: smooth;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background-color: rgba(116, 12, 12, 0.911);
+
+}
+
+#mainHead {
+    color: white;
+    margin: 0px;
+    padding: 100px;
+    font-family: 'Major Mono display';
+    color: brown;
+    font-size: 100px;
+}
+
+header {
+    background-image: url('header.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+}
+
+.hrHeader {
+    background-color: brown;
+    height: 3px;
+    border: 0px;
+    width: 60%;
+    border-radius: 50%;
+    float: left;
+    margin-left: 50px;
+}
+
+.main {
+    color: white;
+    padding: 90px 200px;
+    font-family: 'reggae one';
+    font-size: 20px;
+    text-align: center;
+}
+
+nav {
+    font-family: 'cutive mono';
+    font-size: 20px;
+    color: white;
+}
+
+#navUL {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+#right {
+    display: flex;
+}
+#right li {
+    margin: 10px 20px;
+}
+#left li {
+    margin: 10px 20px;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+
+#popUp {
+    background-color: rgba(0, 0, 0, 0.377);
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 70ms;
+}
+
+.logindiv {
+    height: fit-content;
+    padding: 30px;
+    width: 30%;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#authForm input{
+    display: flex;
+    height: 40px;
+    width: 95%;
+    background-color: rgba(202, 202, 202, 0.637);
+    border: none;
+    font-size: 24px;
+    padding: 10px;
+    margin: 20px 0px;
+}
+
+.authButton, #submitButton {
+    height: 50px;
+    width: 100px;
+    background-color: brown;
+    font-family: 'itim';
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 19px;
+    cursor: pointer;
+    margin: 20px;
+}
+
+#applyButton {
+    background-color: transparent;
+    color: white;
+    font-family: 'cutive mono';
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#authForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
