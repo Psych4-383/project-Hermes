@@ -89,7 +89,7 @@ a {
     text-align: center;
 }
 
-#authForm input{
+#username, #pswd{
     display: flex;
     height: 40px;
     width: 95%;
@@ -103,14 +103,15 @@ a {
 .authButton, #submitButton {
     height: 50px;
     width: 100px;
-    background-color: brown;
+    background-color: rgb(36, 3, 3);
     font-family: 'itim';
-    color: white;
+    color: rgb(136, 136, 136);
     border: none;
     border-radius: 5px;
     font-size: 19px;
     cursor: pointer;
     margin: 20px;
+    text-align: center;
 }
 
 #applyButton {
