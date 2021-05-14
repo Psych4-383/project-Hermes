@@ -32,7 +32,7 @@ function validate() {
         if (username == accountsArray[item].username && password == accountsArray[item].password) {
             location.href = '/Form.html'
             localStorage.setItem('username', username)
-            localStorage.setItem('loggenIn', true)
+            localStorage.setItem('loggedIn', true)
             console.log('Logged In!')
             return false;
         } else {

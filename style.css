@@ -100,7 +100,7 @@ a {
     margin: 20px 0px;
 }
 
-.authButton, #submitButton {
+.authButton {
     height: 50px;
     width: 100px;
     background-color: rgb(36, 3, 3);
@@ -110,8 +110,15 @@ a {
     border-radius: 5px;
     font-size: 19px;
     cursor: pointer;
-    margin: 20px;
+    margin: 20px auto;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.authButton:focus {
+    background-color: brown;
 }
 
 #applyButton {

@@ -11,7 +11,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Hermes | Cosmic Walk</title>
+    <title>Project Hermes Main Page | Cosmic Walk</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 </head>
@@ -69,11 +69,14 @@
             <form action="Form.html" id="authForm">
                 <input type="text" name="username" id="username" placeholder="Enter Username" autocomplete='off'>
                 <input type="password" name="pswd" id="pswd" placeholder="Enter Password" autocomplete="current-password">
-                <input onclick="validate()" class="authButton" placeholder="Login" id="submitButton">
+                <div onclick="validate()" class="authButton" id="submitButton">Login</div>
             </form>
+            <div style="display: flex; justify-content: center; align-items: center; width: 50%; margin: auto;">
             <button onclick="goBack()" class="authButton">
                 Go Back
             </button>
+            <button class="authButton" onclick="location.href = 'signup.html'">Sign Up</button>
+        </div>
         </div>
         
     </div>

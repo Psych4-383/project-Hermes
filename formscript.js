@@ -5,26 +5,29 @@ window.onload = () => {
         location.href = '/index.html';
     }
     const un = document.getElementById('username');
-    un.innerHTML = 'Username : ' + localStorage.getItem('username')
+    un.placeholder = 'Username : ' + localStorage.getItem('username')
+    un.style.backgroundColor = 'white';
+    un.style.cursor = 'no-drop'
 }
 
 function submit(){
-    location.href = '/index.html'
-    return false
-}
+    var data = JSON.stringify({
+        "username" : localStorage.getItem('username'),
+        "name" : document.getElementById('name').value,
+        "country" : document.getElementById('country').value,
+        "phone-number" : document.getElementById('phone-number').value,
+        "email" : document.getElementById('email').value
+    });
+    var xhr = new XMLHttpRequest();
+    xhr.withCredentials = false;
 
-var settings = {
-    "async": true,
-    "crossDomain": true,
-    "url": "https://accounts-7710.restdb.io/rest/new-collection",
-    "method": "GET",
-    "headers": {
-      "content-type": "application/json",
-      "x-apikey": "609be450e3b6e02545eda819",
-      "cache-control": "no-cache"
-    }
-  }
-  
-$.ajax(settings).done(function (response) {
-    console.log(response);
-});
+    xhr.open("POST", "https://accounts-7710.restdb.io/rest/form-responses");
+    xhr.setRequestHeader("content-type", "application/json");
+    xhr.setRequestHeader("x-apikey", "609be450e3b6e02545eda819");
+
+    xhr.send(data);
+    alert('Thank you for submitting the form!')
+    location.href = 'index.html'
+    // location.href = '/index.html'
+    // return false
+}

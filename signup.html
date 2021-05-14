@@ -9,9 +9,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Hermes Application Form | Cosmic Walk</title>
-    <script src="formscript.js"></script>
-    <link rel="stylesheet" href="style2.css">
+    <title>Sign Up Project Hermes | Cosmic Walk</title>
+    <link rel="stylesheet" href="signup.css">
+    <script src="signup.js"></script>
 </head>
 <body>
     <nav>
@@ -24,19 +24,20 @@
             <div id="right">
                 <a href="index.html#main">
                     <li>About</li>
-                </a>            
+                </a>
+                <button onclick="authenticate()" id="applyButton">
+                    <li>Application Form</li>
+                </button>
             </div>
         </ul>
     </nav>
     <div class="container">
-        <h1>Project Hermes Application Form</h1>
-        <form>
-            <input type="text" name= 'username' disabled id="username">
-            <input type="text" name="name" id="name" placeholder="Your Name">
-            <input type="text" name="country" id="country" placeholder="Your Country">
-            <input type="phone" name="phone-number" id="phone-number" placeholder="Phone Number">
-            <input type="email" name="email" id="email" placeholder="Your E-Mail">
-            <div id="sub" onclick="submit()">Submit</div>
+        <form action="#">
+            <h1 style="font-family: reggae one; text-align: center;">Create Your Account for Project Hermes</h1>
+            <input type="text" name="username" id="username" placeholder="Choose a Username">
+            <input type="password" name="password" id="password" placeholder="Choose a Password">
+            <input type="password" name="passwordCheck" id="passwordCheck" placeholder="Re-enter password">
+            <div id="sub" onclick="myFunc()">Create my Account</div>
         </form>
     </div>
 </body>

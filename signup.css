@@ -1,0 +1,84 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: rgb(117, 37, 37);
+}
+nav {
+    font-family: 'cutive mono';
+    font-size: 20px;
+    color: white;
+    background-color: #802929;
+    padding: 20px;
+}
+
+#navUL {
+    list-style: none;
+    display: flex;
+    margin: 0px;
+    justify-content: space-between;
+}
+
+#right {
+    display: flex;
+}
+#right li {
+    margin: 10px 20px;
+}
+#left li {
+    margin: 10px 20px;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+
+
+#applyButton {
+    background-color: transparent;
+    color: white;
+    font-family: 'cutive mono';
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.container {
+    margin: 0px 10%;
+}
+
+form {
+    width: 40%;
+    background-color: white;
+    margin: auto;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    flex-direction: column;
+}
+
+form input {
+    width: 90%;
+    height: 50px;
+    border: none;
+    border-bottom: solid black 1px;
+    margin: 20px auto;
+    font-size: 30px;
+    font-family: 'itim';
+}
+
+#sub {
+    cursor: pointer;
+    height: auto;
+    width: 90%;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(83, 28, 28);
+    color: rgba(255, 255, 255, 0.603);
+    margin: 100px auto 20px;
+    font-size: 30px;
+    font-family: itim;
+    padding: 10px;
+    text-align: center;
+}

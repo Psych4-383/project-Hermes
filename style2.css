@@ -1,7 +1,7 @@
 body {
     padding: 0px;
     margin: 0px;
-    background-color: rgb(138, 41, 41);
+    background-color: rgb(117, 37, 37);
 }
 
 h1{
@@ -10,7 +10,9 @@ h1{
 }
 
 .container {
-    padding: 100px 20%;
+    background-color: rgba(0, 0, 0, 0.541);
+    padding: 100px 10%;
+    margin: 0px 10%;
 }
 
 form {
@@ -26,7 +28,7 @@ form input {
     height: 50px;
     border-radius: 50px;
     background-color: rgba(200, 200, 200, 0.534);
-    border: 1px solid brown;
+    border: 1px solid black;
     color: black;
     text-align: center;
     font-size: 20px;
@@ -49,14 +51,39 @@ form input:focus {
 }
 
 #sub {
-    background-color: rgba(255, 255, 255, 0.562);
-    border: none;
-    height: 50px;
-    width: 100px;
-    padding: 10px;
-    font-family: 'itim';
+    background-color: grey;
+    color: black;
+    padding: 2%;
     font-size: 20px;
-    color: brown;
+    font-family: itim;
     border-radius: 10px;
-    cursor: pointer;
+}
+
+nav {
+    font-family: 'cutive mono';
+    font-size: 20px;
+    color: white;
+    background-color: #802929;
+    padding: 20px;
+}
+
+#navUL {
+    list-style: none;
+    display: flex;
+    margin: 0px;
+    justify-content: space-between;
+}
+
+#right {
+    display: flex;
+}
+#right li {
+    margin: 10px 20px;
+}
+#left li {
+    margin: 10px 20px;
+}
+a {
+    color: white;
+    text-decoration: none;
 }
