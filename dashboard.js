@@ -11,7 +11,6 @@ window.onload = () => {
         if(xhr.status == 200){
             const table = document.getElementById('table')
             var resp = JSON.parse(xhr.response)
-            console.log(resp)
             for (let index = 0; index < resp.length; index++) {
                 const row = document.createElement('tr');
                 table.appendChild(row)
