@@ -16,5 +16,7 @@ function myFunc() {
         alert('Successfully Created account')
         localStorage.setItem('username', document.getElementById('username').value)
         location.href = 'Form.html'
+    } else {
+        alert('Passwords do not match');
     }
 }

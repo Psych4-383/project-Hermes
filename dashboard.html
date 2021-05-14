@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
@@ -10,11 +9,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up Project Hermes | Cosmic Walk</title>
-    <link rel="stylesheet" href="signup.css">
-    <script src="signup.js"></script>
+    <title>Dashboard Project Hermes | Cosmic Walk</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="dashboard.js"></script>
 </head>
-
 <body>
     <nav>
         <ul id="navUL">
@@ -24,9 +22,6 @@
                 </a>
             </div>
             <div id="right">
-                <a href="/dashboard-login.html">
-                    <li>Dashboard</li>
-                </a>
                 <a href="index.html#main">
                     <li>About</li>
                 </a>
@@ -37,14 +32,17 @@
         </ul>
     </nav>
     <div class="container">
-        <form action="#">
-            <h1 style="font-family: reggae one; text-align: center;">Create Your Account for Project Hermes</h1>
-            <input type="text" name="username" id="username" placeholder="Choose a Username">
-            <input type="password" name="password" id="password" placeholder="Choose a Password">
-            <input type="password" name="passwordCheck" id="passwordCheck" placeholder="Re-enter password">
-            <div id="sub" onclick="myFunc()">Create my Account</div>
-        </form>
+        <h1>Form Responses</h1>
+        <table id="table">
+            <tr>
+                <th>Username</th>
+                <th>Name</th>
+                <th>Country</th>
+                <th>Phone Number</th>
+                <th>Email ID</th>
+            </tr>
+            
+        </table>
     </div>
 </body>
-
 </html>

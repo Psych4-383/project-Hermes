@@ -26,13 +26,16 @@
                     </a>
                 </div>
                 <div id="right">
+                    <a href="/dashboard-login.html">
+                        <li>Dashboard</li>
+                    </a>
                     <a href="#main">
                         <li>About</li>
                     </a>
                     <button onclick="authenticate()" id="applyButton">
                         <li>Application Form</li>
                     </button>
-                
+
                 </div>
             </ul>
         </nav>
@@ -68,19 +71,19 @@
             <h1>Login to Apply for Project Hermes</h1>
             <form action="Form.html" id="authForm">
                 <input type="text" name="username" id="username" placeholder="Enter Username" autocomplete='off'>
-                <input type="password" name="pswd" id="pswd" placeholder="Enter Password" autocomplete="current-password">
+                <input type="password" name="pswd" id="pswd" placeholder="Enter Password"
+                    autocomplete="current-password">
                 <div onclick="validate()" class="authButton" id="submitButton">Login</div>
             </form>
             <div style="display: flex; justify-content: center; align-items: center; width: 50%; margin: auto;">
-            <button onclick="goBack()" class="authButton">
-                Go Back
-            </button>
-            <button class="authButton" onclick="location.href = 'signup.html'">Sign Up</button>
+                <button onclick="goBack()" class="authButton">
+                    Go Back
+                </button>
+                <button class="authButton" onclick="location.href = 'signup.html'">Sign Up</button>
+            </div>
         </div>
-        </div>
-        
+
     </div>
 </body>
 
 </html>
-

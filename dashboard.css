@@ -1,0 +1,73 @@
+body{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+nav {
+    font-family: 'cutive mono';
+    font-size: 20px;
+    color: white;
+    background-color: #802929;
+    padding: 20px;
+}
+
+#navUL {
+    list-style: none;
+    display: flex;
+    margin: 0px;
+    justify-content: space-between;
+}
+
+#right {
+    display: flex;
+}
+#right li {
+    margin: 10px 20px;
+}
+#left li {
+    margin: 10px 20px;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+
+
+#applyButton {
+    background-color: transparent;
+    color: white;
+    font-family: 'cutive mono';
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+table {
+    font-family: reggae one;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+  
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+td {
+    font-weight: bold;
+    font-family: cutive mono;
+}
+
+.container {
+    margin: 20px;
+}
+
+h1 {
+    font-family: reggae one;
+}

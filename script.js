@@ -1,5 +1,6 @@
 window.onload = () => {
     localStorage.setItem('loggedIn', false);
+    localStorage.setItem('adminLoggedIn', false)
     var xhr = new XMLHttpRequest();
     xhr.withCredentials = false;
 

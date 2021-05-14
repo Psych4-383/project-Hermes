@@ -15,7 +15,7 @@ function submit(){
         "username" : localStorage.getItem('username'),
         "name" : document.getElementById('name').value,
         "country" : document.getElementById('country').value,
-        "phone-number" : document.getElementById('phone-number').value,
+        "phonenumber" : document.getElementById('phone-number').value,
         "email" : document.getElementById('email').value
     });
     var xhr = new XMLHttpRequest();
@@ -26,8 +26,8 @@ function submit(){
     xhr.setRequestHeader("x-apikey", "609be450e3b6e02545eda819");
 
     xhr.send(data);
-    alert('Thank you for submitting the form!')
-    location.href = 'index.html'
+    alert('Thank you for submitting the form!');
+    location.href = 'index.html';
     // location.href = '/index.html'
     // return false
 }
